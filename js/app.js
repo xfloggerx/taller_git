@@ -1,14 +1,12 @@
 const getRandomInt = (min,max) => {
     return Math.floor(Math.random() * (max - min)) + min;
 }
-/*console.log(getRandomInt(1, 151));*/
 console.log(getRandomInt(1, 151))
 /* ASYNC La declaración de función async define una función asíncrona, la cual devuelve un objeto AsyncFunction.
 Es posible definir también funciones asíncronas a través de una expresión de función async.*/
 const fetchData = async() => {
     try {
         let rand = getRandomInt(1,151);
-       /* let rand = 150 */
         let url = `https://pokeapi.co/api/v2/pokemon/${rand}`;
         /*La expresión await provoca que la ejecución de una función async sea pausada hasta que una Promise 
         sea terminada o rechazada, y regresa a la ejecución de la función async después del término. 
