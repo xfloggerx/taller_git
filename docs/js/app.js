@@ -3,7 +3,7 @@ const getRandomInt = (min,max) => {
 }
 console.log(getRandomInt(1, 151))
 /* ASYNC La declaración de función async define una función asíncrona, la cual devuelve un objeto AsyncFunction.
-Es posible definir también funciones asíncronas a través de una expresión de función async.*/
+Es posible definir también funciones asíncronas a través de una expresión de función async..*/
 const fetchData = async() => {
     try {
         let rand = getRandomInt(1,151);
